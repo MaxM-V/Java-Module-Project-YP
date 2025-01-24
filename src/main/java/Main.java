@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+// import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -7,10 +7,10 @@ public class Main {
         String name;
         int speed;
         int cars = 3;
-        ArrayList<Car> carArr = new ArrayList<>();
-        String carLeader ="";
+      //  ArrayList<Car> carArr = new ArrayList<>();
+       // String carLeader ="";
         for (int i = 0; i<cars; i++){
-            speed = 0;
+           // speed = 0;
             Car car = new Car ();
             System.out.println("Введите название "+ (i+1) + " автомобиля");
             name = sc.nextLine();
@@ -19,7 +19,7 @@ public class Main {
                 System.out.println("Введите скорость от 0 до 250 км в ч "+ (i+1) + " автомобиля");
                 speed = Integer.parseInt(sc.nextLine());
                 if (speed>0 && speed<= 250){
-                    car.speed = speed;
+                   // car.speed = speed;
                     break;
                 } else {
                     System.out.println("Не верное значение, попробуйте еще раз");
