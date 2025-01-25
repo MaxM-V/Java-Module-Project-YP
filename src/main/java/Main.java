@@ -17,7 +17,11 @@ public class Main {
             car.name = name;
             while (true){
                 System.out.println("Введите скорость от 0 до 250 км в ч "+ (i+1) + " автомобиля");
-                speed = Integer.parseInt(sc.nextLine());
+                try {speed = Integer.parseInt(sc.nextLine());
+                } catch (Exception e){
+                    System.out.println("Не верное значение, попробуйте еще раз");
+                    continue;
+                }
                 if (speed>0 && speed<= 250){
                    // car.speed = speed;
                     break;
