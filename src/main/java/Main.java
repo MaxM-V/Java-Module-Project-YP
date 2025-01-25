@@ -7,10 +7,7 @@ public class Main {
         String name;
         int speed;
         int cars = 3;
-      //  ArrayList<Car> carArr = new ArrayList<>();
-       // String carLeader ="";
         for (int i = 0; i<cars; i++){
-           // speed = 0;
             Car car = new Car ();
             System.out.println("Введите название "+ (i+1) + " автомобиля");
             name = sc.nextLine();
@@ -23,7 +20,6 @@ public class Main {
                     continue;
                 }
                 if (speed>0 && speed<= 250){
-                   // car.speed = speed;
                     break;
                 } else {
                     System.out.println("Не верное значение, попробуйте еще раз");
